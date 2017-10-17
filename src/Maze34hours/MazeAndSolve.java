@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package MazeIn;
+package Maze34hours;
 
 /**
  *
@@ -13,8 +13,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
+import java.util.Scanner;
 
-public class MazeInter {
+public class MazeAndSolve {
 
     private int dimensionX, dimensionY;
     private int gridDimensionX, gridDimensionY;
@@ -22,12 +23,12 @@ public class MazeInter {
     private Cell[][] cells;
     private Random random = new Random();
 
-    public MazeInter(int aDimension) {
+    public MazeAndSolve(int aDimension) {
 
         this(aDimension, aDimension);
     }
 
-    public MazeInter(int xDimension, int yDimension) {
+    public MazeAndSolve(int xDimension, int yDimension) {
         dimensionX = xDimension;
         dimensionY = yDimension;
         gridDimensionX = xDimension * 4 + 1;
@@ -345,8 +346,16 @@ public class MazeInter {
 
    
     public static void main(String[] args) {
-        MazeInter maze = new MazeInter(20);
-
+        MazeAndSolve maze = new MazeAndSolve(20);
+        Scanner scan = new Scanner(System.in);
+        int i = scan.nextInt();
+        switch(i){
+            case 1:
+                break;
+            case 2:
+                break;
+        }
+        
         maze.solve();
         maze.draw();
     }
